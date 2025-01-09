@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignSelf: 'center',
     marginTop: 20,
-    fontStyle: 'italic',
   },
 });
 
@@ -91,7 +90,7 @@ const Settings = () => {
         value={darkMode}
         textStyle={{ color: appTheme.red }}
       />
-      <CustomText xlarge style={[versionText, { color: appTheme.text }]}>
+      <CustomText style={[versionText, { color: appTheme.text }]}>
         {getVersionName()}
       </CustomText>
     </SafeAreaView>

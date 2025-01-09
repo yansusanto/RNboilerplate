@@ -1,13 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react';
-import {
-  CustomText,
-  Layout,
-  BottomModalContainer,
-  IsAlertModal,
-} from '@CommonComponent';
+import { Layout, IsAlertModal } from '@CommonComponent';
 import { useIsFocused } from '@react-navigation/native';
-import { ButtonComponent } from '@SubComponents';
 import {
   compareAppVersions,
   getVersionName,
@@ -20,7 +14,6 @@ import { useAppContext } from '@AppContext';
 
 const Home = () => {
   const { appTheme } = useAppContext();
-  const [isShowModal, setShowModal] = useState(false);
   const [isUpdate, setIsUpdate] = useState(false);
   let version = getVersionName();
   const alertDetails = alertData.updateVersion;
@@ -61,22 +54,7 @@ const Home = () => {
   };
 
   return (
-    <Layout title="Widgets" padding={20}>
-      <CustomText large>Home screen</CustomText>
-      <ButtonComponent
-        onPress={() => {
-          setShowModal(true);
-        }}
-        backColor={appTheme.themeColor}
-        title="Show Modal"
-        borderRadius={4}
-      />
-      <BottomModalContainer
-        title="Modal"
-        onClose={() => setShowModal(false)}
-        show={isShowModal}>
-        <CustomText large>Modal</CustomText>
-      </BottomModalContainer>
+    <Layout padding={20}>
       <IsAlertModal
         visible={isUpdate}
         data={alertDetails}

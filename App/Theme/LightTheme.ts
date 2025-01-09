@@ -6,7 +6,7 @@ const LightTheme = {
   themeColor: ThemeColor.primary,
   background: ThemeColor.white,
   shadowColor: ThemeColor.black,
-  card: ThemeColor.lighter,
+  card: ThemeColor.white,
   text: ThemeColor.gray6,
   lightText: ThemeColor.gray3,
   border: ThemeColor.lightGray4,

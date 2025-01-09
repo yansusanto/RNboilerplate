@@ -15,17 +15,16 @@ import { useAppContext } from '@AppContext';
 
 const styles = StyleSheet.create({
   outer: {
-    height: 60,
+    paddingVertical: 15,
     paddingHorizontal: 20,
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.5,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
   },
   header: {
-    paddingHorizontal: 15,
-    paddingTop: 25,
-    paddingBottom: 10,
+    paddingHorizontal: 20,
+    paddingVertical: 15,
     fontWeight: '500',
   },
   icon: {
