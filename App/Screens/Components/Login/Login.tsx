@@ -54,8 +54,8 @@ const Login = () => {
   });
   const { email, password, isSecureTextEntry, isProcessing } = state;
 
-  const refEmail = useRef<any>();
-  const refPassword = useRef<any>();
+  const refEmail = useRef<any>(null);
+  const refPassword = useRef<any>(null);
 
   const { outer, title, btnText, marginTop, flexDirection, flex } = styles;
   const { input, flexContainer, center, inputIcon, inputImg } = CommonStyle;

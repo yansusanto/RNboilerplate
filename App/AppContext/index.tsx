@@ -6,6 +6,7 @@ import React, {
   useEffect,
   useMemo,
   useState,
+  JSX,
 } from 'react';
 import { Appearance } from 'react-native';
 import { AppThemeType, DEFAULT_THEME, Theme, ThemeType } from '@Theme';
