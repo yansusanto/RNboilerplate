@@ -2,13 +2,12 @@ import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import Settings from '@Components/Settings/Settings';
 import { useAppContext } from '@AppContext';
-import { useTranslation } from 'react-i18next';
+import { I18n } from '@Localization';
 
 const Stack = createStackNavigator();
 
 const SettingsStack = () => {
   const { appTheme } = useAppContext();
-  const { i18n: I18n } = useTranslation();
   return (
     <Stack.Navigator
       screenOptions={() => ({
