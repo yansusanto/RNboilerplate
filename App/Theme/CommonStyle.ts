@@ -27,13 +27,14 @@ const CommonStyle = StyleSheet.create({
   input: {
     height: 50,
     marginBottom: 15,
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.5,
     paddingTop: 10,
+    fontSize: 16,
   },
   inputIcon: {
     height: 50,
     width: 50,
-    borderBottomWidth: 1,
+    borderBottomWidth: 0.5,
   },
   inputImg: {
     width: 23,

@@ -9,7 +9,12 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { AppImages, CommonStyle } from '@Theme';
-import { Authentication, goToNextScreen, setItemInStorage } from '@Utils';
+import {
+  Authentication,
+  fontSizes,
+  goToNextScreen,
+  setItemInStorage,
+} from '@Utils';
 import { BottomView, ButtonComponent } from '@SubComponents';
 import { CustomText } from '@CommonComponent';
 import { Route } from '@Routes/AppRoutes';
